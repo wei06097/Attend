@@ -1,0 +1,41 @@
+
+<title>【國立臺灣科技大學數位學習平台】</title>
+<link href="moodle.ico" rel="shortcut icon">
+<style>
+	#player{
+		width:70vw;height:40vw;
+		padding:0px; margin:0px auto; 
+		display:block;
+	}
+</style>
+<script>
+	var player;
+	var tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	onYouTubeIframeAPIReady=function(){
+		player = new YT.Player("player", {
+			height:"100%", 
+			width:"100%", 
+			videoId:"072tU1tamd0"
+		});
+	}
+	function init(){
+		btnClick();
+		setInterval(videoCheck,100);
+	}
+	function btnClick(){
+		player.mute();
+		player.seekTo(3,true);
+		player.playVideo();
+	}
+	videoCheck = function(){
+		var state = player.getPlayerState();
+		if(state==0){player.seekTo(0,true);player.playVideo();}
+		else if(state==-1){player.seekTo(3,true);player.playVideo();}
+	}
+</script>
+<body onload="init();">
+	<div id="player"/>
+</body>

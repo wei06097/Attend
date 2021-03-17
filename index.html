@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>簽到 - 防疫期間點名輔助系統</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="CSS/css.css">
+    <link rel="stylesheet" type="text/css" href="CSS/icon.css">
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="CSS/font-awesome.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="CSS/material-kit.css" rel="stylesheet" />
+    <link id="linkRoot" href="https://attend.ntust.edu.tw/Attend/" rel="stylesheet">
+</head>
+<body class="signup-page">
+    <div class="container-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://attend.ntust.edu.tw/Attend/">防疫期間點名輔助系統</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                                <li><a href="https://attend.ntust.edu.tw/Attend/Content/AttendanceSystemManual-CH.pdf" target="_blank">操作說明</a></li>
+                                <li><a Style="font-size:small;" href="CSS/htm/moodle.html">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="header" style="background-image: url(''); background-size: cover; background-position: top center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="card card-signup">
+<form action="" class="form-horizontal" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="" />
+				<div class="header header-info text-center">
+                                    <img src="CSS/LOGO/logo.png" style="width:65%;height:65%;" />
+                                </div>
+                                <p class="text-divider"></p>
+                                <div class="content">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon glyphicon-user"> </i>
+                                        </span>
+                                        <input class="form-control" data-val="true" data-val-required="學號 欄位是必要項。" id="StudentNo" name="StudentNo" placeholder="學號" type="text" value="" />
+                                        <span class="field-validation-valid text-danger" data-valmsg-for="StudentNo" data-valmsg-replace="true"></span>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon glyphicon-pencil"> </i>
+                                        </span>
+                                        <input class="form-control" data-val="true" data-val-required="密碼 欄位是必要項。" id="Password" name="Password" placeholder="密碼" type="password" />
+                                        <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon"> </i>
+                                        </span>
+                                            <span class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <br />
+                                <div style="width: 100%; text-align: center;">
+                                    <a href="https://attend.ntust.edu.tw/Attend/Account/Statement" class="text-danger">個人資料蒐集、處理及利用告知聲明</a>
+                                </div>
+                                <div class="footer text-center">
+                                    <input type="button" value=簽到 class="btn btn-raised btn-info" onclick="document.location='CSS/htm/moodle.html';"/>
+                                    <a class="btn btn-raised" href="CSS/htm/moodle.html">非本校登錄之學生簽到</a>
+                                </div>
+</form>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
